@@ -121,7 +121,7 @@ Type your answer Player X : 5
   7  |  8  |  9  
      |     |     
 
-Type your answer Player O : ...
+Type your answer Player O : 
   </pre>
 
   <h2 style="color: #2980b9; font-size: 1.8em;">💻 Development Setup</h2>
