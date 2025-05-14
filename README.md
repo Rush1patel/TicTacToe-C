@@ -93,36 +93,38 @@ TicTacToe-C/
     <li>Align three symbols (horizontally, vertically, or diagonally) to win.</li>
     <li>If all 9 positions are filled without a winner, the game ends in a draw.</li>
   </ol>
-
   <h2 style="color: #2980b9; font-size: 1.8em;">🖥️ Example Gameplay</h2>
-  <pre style="background: #f7f7f7; padding: 15px; border-radius: 5px; font-family: monospace;">
-     |     |     
-  1  |  2  |  3  
-     |     |     
+<pre style="background: #f7f7f7; padding: 15px; border-radius: 5px; font-family: monospace;">
+        |           |         
+   1    |     2     |     3    
+        |           |         
 ------------------------------
-     |     |     
-  4  |  5  |  6  
-     |     |     
+        |           |         
+   4    |     5     |     6    
+        |           |         
 ------------------------------
-     |     |     
-  7  |  8  |  9  
-     |     |     
+        |           |         
+   7    |     8     |     9    
+        |           |         
+
+Type your answer Player X : 10
+<span style="font-size: 1.2em; font-weight: bold; color: #e74c3c;">Input error, Try Again</span>
 
 Type your answer Player X : 5
-     |     |     
-  1  |  2  |  3  
-     |     |     
+        |           |         
+   1    |     2     |     3    
+        |           |         
 ------------------------------
-     |     |     
-  4  |  X  |  6  
-     |     |     
+        |           |         
+   4    |     X     |     6    
+        |           |         
 ------------------------------
-     |     |     
-  7  |  8  |  9  
-     |     |     
+        |           |         
+   7    |     8     |     9    
+        |           |         
 
-Type your answer Player O : 
-  </pre>
+Type your answer Player O : ...
+</pre>
 
   <h2 style="color: #2980b9; font-size: 1.8em;">💻 Development Setup</h2>
   <ul style="list-style-type: disc; padding-left: 20  style="list-style-type: disc; padding-left: 20px;">
