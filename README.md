@@ -110,20 +110,6 @@ TicTacToe-C/
 Type your answer Player X : 10
 <span style="font-size: 1.2em; font-weight: bold; color: #e74c3c;">Input error, Try Again</span>
 
-Type your answer Player X : 5
-        |           |         
-   1    |     2     |     3    
-        |           |         
-------------------------------
-        |           |         
-   4    |     X     |     6    
-        |           |         
-------------------------------
-        |           |         
-   7    |     8     |     9    
-        |           |         
-
-Type your answer Player O : ...
 </pre>
 
   <h2 style="color: #2980b9; font-size: 1.8em;">💻 Development Setup</h2>
