@@ -166,13 +166,7 @@ The rules are simple, the challenge is eternal!
 
 Here's a glimpse of the core logic that determines a victor in `tictactoe.c`.
 
-> **🖼️ CODE SNIPPET IMAGE - ACTION REQUIRED! 🖼️**
-> Rushi, to make this even more impressive:
-> 1.  Copy the `win` function code.
-> 2.  Go to [**Carbon.now.sh**](https://carbon.now.sh/).
-> 3.  Paste, style, and export as PNG.
-> 4.  Save it (e.g., in an `assets` folder as `win_snippet.png`).
-> 5.  **REPLACE THE `src` PATH BELOW** with your image's path (e.g., `assets/win_snippet.png`).
+![image alt](https://github.com/Rush1patel/TicTacToe-C/blob/9e407ccf12f88a581b1bbe9ac3e7338498158067/carbon.png)
 
 ## 🔮 Future Adventures (Planned Enhancements)
 
