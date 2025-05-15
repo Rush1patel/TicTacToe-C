@@ -13,7 +13,7 @@
   <!-- Ensure your repository is PUBLIC for these badges to work correctly for everyone -->
   <img src="https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c" alt="Language C"/>
   <img src="https://img.shields.io/badge/Platform-Console-lightgrey?style=for-the-badge&logo=gnome-terminal" alt="Platform Console"/>
- <a href="https://github.com/Rushi1patel/TicTacToe-C/stargazers"><img src="https://img.shields.io/github/stars/Rush1patel/TicTacToe-C?style=for-the-badge&logo=github&label=Stars" alt="GitHub Stars"/></a>
+ <a href="https://github.com/Rush1patel/TicTacToe-C/stargazers"><img src="https://img.shields.io/github/stars/Rush1patel/TicTacToe-C?style=for-the-badge&logo=github&label=Stars" alt="GitHub Stars"/></a>
   <a href="https://github.com/Rush1patel/TicTacToe-C/network/members"><img src="https://img.shields.io/github/forks/Rush1patel/TicTacToe-C?style=for-the-badge&logo=github&label=Forks" alt="GitHub Forks"/></a>
   <a href="https://github.com/Rush1patel/TicTacToe-C/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License MIT"/></a>
   <a href="https://github.com/Rush1patel/TicTacToe-C/commits/main"><img src="https://img.shields.io/github/last-commit/Rush1patel/TicTacToe-C?style=for-the-badge&logo=github&label=Last%20Commit" alt="GitHub last commit"/></a>
