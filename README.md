@@ -1,167 +1,237 @@
-<div style="font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333;">
 
-  <h1 style="color: #2c3e50; font-size: 2.5em; text-align: center;">TicTacToe-C 🎮</h1>
+<h1 align="center">Tic-Tac-Toe in C</h1>
 
-  <p style="font-size: 1.1em; color: #34495e; text-align: center;">
-    A classic <strong>Tic-Tac-Toe</strong> game implemented in <strong>C</strong>, designed to run in a console environment. This project delivers a fun, two-player game with a clean ASCII board, input validation, and automatic win/draw detection, perfect for learning C programming or enjoying a quick match.
-  </p>
+<p align="center">
+  <strong>A classic Tic-Tac-Toe game, meticulously crafted in C by Rushi Patel.</strong>
+  <br />
+  Dive into this timeless duel of X's and O's, right from your terminal!
+</p>
 
-  <hr style="border: 1px solid #dfe6e9; margin: 20px 0;">
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">✨ Features</h2>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li><strong>Two-Player Mode</strong>: Players alternate as <code>X</code> and <code>O</code> in a head-to-head match.</li>
-    <li><strong>ASCII Board Display</strong>: Clear 3x3 grid using ASCII art for an intuitive game view.</li>
-    <li><strong>Position-Based Input</strong>: Enter moves using numbers 1-9 corresponding to board positions.</li>
-    <li><strong>Input Validation</strong>: Rejects invalid or occupied positions, prompting retries.</li>
-    <li><strong>Win Detection</strong>: Checks for wins across rows, columns, and diagonals.</li>
-    <li><strong>Draw Detection</strong>: Declares a draw when the board is full without a winner.</li>
-    <li><strong>Lightweight</strong>: Single C file, runs on any system with a C compiler.</li>
-  </ul>
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">🛠️ Prerequisites</h2>
-  <p>To run this game, you’ll need:</p>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li>A C compiler (e.g., GCC)</li>
-    <li><a href="https://code.visualstudio.com/" style="color: #2980b9; text-decoration: none;">Visual Studio Code</a> (recommended) or any C-compatible IDE</li>
-    <li>Basic knowledge of running C programs</li>
-  </ul>
+<p align="center">
+  <!-- Ensure your repository is PUBLIC for these badges to work correctly for everyone -->
+  <img src="https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c" alt="Language C"/>
+  <img src="https://img.shields.io/badge/Platform-Console-lightgrey?style=for-the-badge&logo=gnome-terminal" alt="Platform Console"/>
+ <a href="https://github.com/Rushi1patel/TicTacToe-C/stargazers"><img src="https://img.shields.io/github/stars/Rush1patel/TicTacToe-C?style=for-the-badge&logo=github&label=Stars" alt="GitHub Stars"/></a>
+  <a href="https://github.com/Rush1patel/TicTacToe-C/network/members"><img src="https://img.shields.io/github/forks/Rush1patel/TicTacToe-C?style=for-the-badge&logo=github&label=Forks" alt="GitHub Forks"/></a>
+  <a href="https://github.com/Rush1patel/TicTacToe-C/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License MIT"/></a>
+  <a href="https://github.com/Rush1patel/TicTacToe-C/commits/main"><img src="https://img.shields.io/github/last-commit/Rush1patel/TicTacToe-C?style=for-the-badge&logo=github&label=Last%20Commit" alt="GitHub last commit"/></a>
+</p>
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">🚀 Getting Started</h2>
+---
 
-  <h3 style="color: #2c3e50;">1. Clone the Repository</h3>
-  <pre style="background: #f7f7f7; padding: 15px; border-radius: 5px; font-family: monospace;">
-git clone https://github.com/Rush1patel/TicTacToe-C.git
-cd TicTacToe-C
-  </pre>
+## 🌟 Key Highlights
 
-  <h3 style="color: #2c3e50;">2. Open in VS Code</h3>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li>Launch VS Code.</li>
-    <li>Open the <code>TicTacToe-C</code> folder via <code>File > Open Folder</code>.</li>
-  </ul>
+Experience the core features that make this C Tic-Tac-Toe game a solid implementation:
 
-  <h3 style="color: #2c3e50;">3. Compile the Code</h3>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li>Install the <strong>C/C++ Extension</strong> by Microsoft in VS Code for IntelliSense and debugging.</li>
-    <li>Open the terminal in VS Code (<code>Terminal > New Terminal</code>).</li>
-    <li>Compile the code:</li>
-  </ul>
-  <pre style="background: #f7f7f7; padding: 15px; border-radius: 5px; font-family: monospace;">
-gcc -o tictactoe tictactoe.c
-  </pre>
-  <p><strong>Note</strong>: Ensure GCC is installed. On Windows, use MinGW. On macOS/Linux, install via <code>sudo apt-get install gcc</code> or <code>brew install gcc</code>.</p>
+*   **🕹️ Classic 3x3 Gameplay:** The timeless X vs. O challenge you know and love.
+*   **🔄 Interactive Turn-Based System:** Clear prompts guide Player X and Player O through their moves.
+*   **🏆 Robust Win Detection:** Accurately identifies horizontal, vertical, and diagonal winning lines.
+*   **🤝 Draw Game Recognition:** Correctly declares a stalemate when the board is full and no winner emerges.
+*   **🛡️ Input Validation:** Ensures moves are within the 1-9 range and on unoccupied cells, prompting for a retry on invalid input.
+*   **🖥️ Dynamic Board Display:** The console board refreshes after every valid move, clearly showing the current game state.
+*   **💡 Pure C Implementation:** Lightweight, efficient, and all logic is neatly contained within a single `tictactoe.c` source file.
+*   **🧑‍💻 Player vs. Player:** Designed for two human players sharing the same terminal.
 
-  <h3 style="color: #2c3e50;">4. Run the Game</h3>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li>Execute the compiled program:</li>
-  </ul>
-  <pre style="background: #f7f7f7; padding: 15px; border-radius: 5px; font-family: monospace;">
-./tictactoe
-  </pre>
-  <p>On Windows, use <code>tictactoe.exe</code>. Alternatively, use VS Code’s <strong>Run</strong> button with a <code>tasks.json</code> file.</p>
+---
 
-  <h3 style="color: #2c3e50;">5. Play!</h3>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li>View the 3x3 board with positions numbered 1-9.</li>
-    <li>Enter a number (1-9) to place your symbol (<code>X</code> or <code>O</code>).</li>
-    <li>The game alternates players, validates inputs, and announces the winner or a draw.</li>
-  </ul>
+## 🎬 Gameplay in Action
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">📂 Project Structure</h2>
-  <pre style="background: #f7f7f7; padding: 15px; border-radius: 5px; font-family: monospace;">
-TicTacToe-C/
-├── tictactoe.c     # Core game logic and implementation
-├── README.md       # This file
-├── LICENSE         # MIT License
-  </pre>
-
-  <h2 style="color: #2980b9; font-size: 1.8em;">💻 Code Overview</h2>
-  <p>The game is implemented in a single file, <a href="tictactoe.c" style="color: #2980b9; text-decoration: none;">tictactoe.c</a>, with clear, commented code for readability. Key components:</p>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li><strong>Main Function</strong>: Manages the game loop, player turns, and input validation.</li>
-    <li><strong>intro Function</strong>: Prints the 3x3 ASCII board with current positions.</li>
-    <li><strong>win Function</strong>: Checks for winning combinations and updates the game status.</li>
-  </ul>
-  <p>Comments in the code explain critical logic, making it easy to understand and extend. Check <a href="tictactoe.c" style="color: #2980b9; text-decoration: none;">tictactoe.c</a> for details.</p>
-
-  <h2 style="color: #2980b9; font-size: 1.8em;">🎲 How to Play</h2>
-  <ol style="padding-left: 20px;">
-    <li>The game starts with a 3x3 board, positions labeled 1-9.</li>
-    <li>Player 1 (<code>X</code>) and Player 2 (<code>O</code>) take turns.</li>
-    <li>Enter a number (1-9) to place your symbol in that position.</li>
-    <li>Align three symbols (horizontally, vertically, or diagonally) to win.</li>
-    <li>If all 9 positions are filled without a winner, the game ends in a draw.</li>
-  </ol>
-  <h2 style="color: #2980b9; font-size: 1.8em;">🖥️ Example Gameplay</h2>
-<pre style="background: #f7f7f7; padding: 15px; border-radius: 5px; font-family: monospace;">
-        |           |         
-   1    |     2     |     3    
-        |           |         
+  ```text
+        |           |
+   1    |     2     |     3
+        |           |
 ------------------------------
-        |           |         
-   4    |     5     |     6    
-        |           |         
+        |           |
+   4    |     5     |    6
+        |           |
 ------------------------------
-        |           |         
-   7    |     8     |     9    
-        |           |         
+        |           |
+   7    |     8     |     9
+        |           |
 
-Type your answer Player X : 10
-<span style="font-size: 1.2em; font-weight: bold; color: #e74c3c;">Input error, Try Again</span>
+Type your answer Player X : 1
+        |           |
+   X    |     2     |     3
+        |           |
+------------------------------
+        |           |
+   4    |     5     |    6
+        |           |
+------------------------------
+        |           |
+   7    |     8     |     9
+        |           |
 
-</pre>
+Type your answer Player O : 5
+        |           |
+   X    |     2     |     3
+        |           |
+------------------------------
+        |           |
+   4    |     O     |    6
+        |           |
+------------------------------
+        |           |
+   7    |     8     |     9
+        |           |
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">💻 Development Setup</h2>
-  <ul style="list-style-type: disc; padding-left: 20  style="list-style-type: disc; padding-left: 20px;">
-    <li><strong>IDE</strong>: Visual Studio Code</li>
-    <li><strong>Compiler</strong>: GCC (or MinGW for Windows)</li>
-    <li><strong>Extensions</strong>:
-      <ul style="list-style-type: circle; padding-left: 20px;">
-        <li>C/C++ by Microsoft (for IntelliSense and debugging)</li>
-        <li>Code Runner (optional, for quick execution)</li>
-      </ul>
-    </li>
-    <li><strong>OS</strong>: Compatible with Windows, macOS, and Linux</li>
-  </ul>
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">🛡️ Error Handling</h2>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li>Rejects inputs outside 1-9 or already occupied positions.</li>
-    <li>Prompts the player to retry with an error message.</li>
-  </ul>
+Type your answer Player X :
+```
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">🌟 Why This Project?</h2>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li><strong>Learn C Programming</strong>: Practice arrays, loops, conditionals, and pointer usage.</li>
-    <li><strong>Simple Yet Fun</strong>: Build a complete game with minimal code.</li>
-    <li><strong>Extensible</strong>: Add features like AI opponents, score tracking, or colored output.</li>
-  </ul>
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">🤝 Contributing</h2>
-  <p>To contribute:</p>
-  <ol style="padding-left: 20px;">
-    <li>Fork the repository.</li>
-    <li>Create a branch (<code>git checkout -b feature/your-feature</code>).</li>
-    <li>Commit changes (<code>git commit -m "Add your feature"</code>).</li>
-    <li>Push to the branch (<code>git push origin feature/your-feature</code>).</li>
-    <li>Open a Pull Request.</li>
-  </ol>
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">📜 License</h2>
-  <p>This project is licensed under the MIT License. See the <a href="LICENSE" style="color: #2980b9; text-decoration: none;">LICENSE</a> file for details.</p>
+---
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">🙌 Acknowledgments</h2>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li>Built with ❤️ using C and VS Code.</li>
-    <li>Inspired by the classic Tic-Tac-Toe game.</li>
-  </ul>
+## 🛠️ Tech Stack
 
-  <h2 style="color: #2980b9; font-size: 1.8em;">📬 Contact</h2>
-  <p>Questions or suggestions? Open a <a href="https://github.com/Rush1patel/TicTacToe-C/issues" style="color: #2980b9; text-decoration: none;">GitHub issue</a>.</p>
+This project is built purely with fundamental, yet powerful tools:
 
-  <p style="text-align: center; font-size: 1.2em; color: #2c3e50; margin-top: 20px;">
-    Enjoy playing Tic-Tac-Toe! 🎉
-  </p>
+*   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Language" width="20" height="20"/> **C Programming Language:** The core logic and engine of the game.
+*   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gcc/gcc-original.svg" alt="GCC" width="20" height="20"/> **GCC (GNU Compiler Collection):** (Or your preferred C compiler like Clang) Used for compiling the `tictactoe.c` source file.
+*   **Standard C Libraries:** `stdio.h` for input/output operations.
 
-</div>
+---
+
+## 🚀 Getting Started
+
+Ready to play? Follow these simple steps to get the game running on your local machine.
+
+### Prerequisites
+
+*   A C compiler (e.g., GCC, Clang) installed on your system.
+*   Git (for cloning the repository, or you can download the `tictactoe.c` file directly).
+*   A terminal or command-line interface.
+
+### Installation & Compilation
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/Rush1patel/TicTacToe-C.git
+    cd TicTacToe-C
+    ```
+    Alternatively, you can just download the `tictactoe.c` file.
+
+2.  **Compile the Game:**
+    Navigate to the directory containing `tictactoe.c` and compile it using GCC (or your preferred C compiler):
+    ```bash
+    gcc tictactoe.c -o tictactoe -Wall -Wextra -pedantic -std=c99
+    ```
+    *   `tictactoe.c`: Your C source file.
+    *   `-o tictactoe`: Specifies the output executable name as `tictactoe`.
+    *   `-Wall -Wextra -pedantic`: Enables most compiler warnings for better code quality (recommended).
+    *   `-std=c99`: Specifies the C99 standard.
+
+3.  **Run the Game:**
+    Once compiled successfully, execute the program:
+    ```bash
+    ./tictactoe
+    ```
+
+---
+
+## 📖 How to Play
+
+The rules are simple, the challenge is eternal!
+
+1.  After running the game, the initial 3x3 Tic-Tac-Toe board will be displayed with numbered cells:
+    ```
+            |           |         
+       1    |     2     |     3    
+            |           |         
+    ------------------------------
+            |           |         
+       4    |     5     |    6     
+            |           |         
+    ------------------------------
+            |           |         
+       7    |     8     |     9    
+            |           |         
+    ```
+2.  **Player X** always starts the game.
+3.  You will be prompted: `Type your answer Player X : `
+4.  Enter the **number (1-9)** corresponding to the cell where you want to place your mark.
+5.  If the move is valid, your mark ('X' or 'O') will be placed, and the board will be redisplayed.
+6.  **Player O** takes the next turn.
+7.  Players alternate turns until one of the following occurs:
+    *   👑 **Victory!** A player successfully aligns three of their marks. The game will announce the winner.
+    *   🤝 **Stalemate!** All nine cells are filled, and no player has won. The game will declare a draw.
+8.  The game concludes after a win or a draw. To play again, re-run the executable.
+
+---
+
+## ✨ Peek into the Code: The `win()` Function
+
+Here's a glimpse of the core logic that determines a victor in `tictactoe.c`.
+
+> **🖼️ CODE SNIPPET IMAGE - ACTION REQUIRED! 🖼️**
+> Rushi, to make this even more impressive:
+> 1.  Copy the `win` function code.
+> 2.  Go to [**Carbon.now.sh**](https://carbon.now.sh/).
+> 3.  Paste, style, and export as PNG.
+> 4.  Save it (e.g., in an `assets` folder as `win_snippet.png`).
+> 5.  **REPLACE THE `src` PATH BELOW** with your image's path (e.g., `assets/win_snippet.png`).
+
+## 🔮 Future Adventures (Planned Enhancements)
+
+Here are some exciting features planned for future updates:
+
+-   🤖 **AI Opponent:** Implement a single-player mode where you can challenge an AI.
+-   🔁 **Play Again Option:** Allow players to easily start a new game without re-running the program.
+-   📊 **Score Tracking:** Implement a system to keep track of scores across multiple games.
+-   🎨 **Enhanced UI (ncurses):** Explore using the ncurses library for a richer and more interactive terminal-based user interface.
+-   🧑‍🤝‍🧑 **Player Name Input:** Allow players to input their names for a more personalized gaming experience.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are always welcome! We appreciate your help in making this project better.
+
+**How to Contribute:**
+
+1.  **Fork the Project:**
+    *   Navigate to `https://github.com/Rush1patel/TicTacToe-C`
+    *   Click the "Fork" button in the top right corner.
+2.  **Create your Feature Branch:**
+    ```bash
+    git checkout -b feature/AmazingFeature
+    ```
+3.  **Commit your Changes:**
+    ```bash
+    git commit -m 'feat: Add some AmazingFeature'
+    ```
+    *(Please follow conventional commit messages if possible)*
+4.  **Push to the Branch:**
+    ```bash
+    git push origin feature/AmazingFeature
+    ```
+5.  **Open a Pull Request:**
+    *   Navigate back to the original repository: `https://github.com/Rush1patel/TicTacToe-C`
+    *   Click on "Pull requests" and then "New pull request".
+    *   Ensure the base repository is `Rush1patel/TicTacToe-C` and the base branch is `main` (or your project's default branch).
+    *   Ensure the head repository is your fork and the compare branch is `feature/AmazingFeature`.
+    *   Provide a clear title and description for your pull request.
+
+**Found a Bug or Have a Suggestion?**
+
+Please [open an issue here](https://github.com/Rush1patel/TicTacToe-C/issues) to report bugs or suggest new features.
+
+---
+
+## 📜 License
+
+This project is distributed under the MIT License.
+
+See the `LICENSE` file (or `LICENSE.md`) in the root of the repository for the full license text.
+*(Typically, you would have a file named `LICENSE` or `LICENSE.md` in your repository containing the actual MIT License text).*
+
+---
+
+<p align="center">
+  Crafted with <span style="color: #e25555;">♥</span> and C by <strong>Rushi Patel</strong>
+  <br />
+  <a href="https://github.com/Rush1patel"><strong>GitHub: Rush1patel</strong></a>
+</p>
