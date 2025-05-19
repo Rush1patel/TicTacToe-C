@@ -220,12 +220,15 @@ Please [open an issue here](https://github.com/Rush1patel/TicTacToe-C/issues) to
 This project is distributed under the MIT License.
 
 See the `LICENSE` file (or `LICENSE.md`) in the root of the repository for the full license text.
-*(Typically, you would have a file named `LICENSE` or `LICENSE.md` in your repository containing the actual MIT License text).*
 
 ---
-
 <p align="center">
-  Crafted with <span style="color: #e25555;">♥</span> and C by <strong>Rushi Patel</strong>
-  <br />
-  <a href="https://github.com/Rush1patel"><strong>GitHub: Rush1patel</strong></a>
+  <img src="https://img.shields.io/badge/Crafted%20with-C%20Magic%20✨-00599C?style=for-the-badge&logo=c" alt="Crafted with C Magic"/>
+  <a href="https://github.com/Rush1patel">
+    <img src="https://img.shields.io/badge/Dev-Rushi%20Patel-00FFFF?style=for-the-badge&logo=git&logoColor=white" alt="Developer Rushi Patel"/> <!-- Aqua color, Git logo -->
+  </a>
+  <a href="https://github.com/Rush1patel?tab=followers">
+    <img src="https://img.shields.io/badge/Follow%20Me%20on%20GitHub%20%7C%20Stay%20Synced%20🔁-333?style=for-the-badge&logo=github&logoColor=white" alt="Follow Rushi Patel on GitHub - Stay Synced"/>
+  </a>
 </p>
+
