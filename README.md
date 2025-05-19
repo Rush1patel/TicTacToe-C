@@ -31,7 +31,7 @@ Experience the core features that make this C Tic-Tac-Toe game a solid implement
 *   **🤝 Draw Game Recognition:** Correctly declares a stalemate when the board is full and no winner emerges.
 *   **🛡️ Input Validation:** Ensures moves are within the 1-9 range and on unoccupied cells, prompting for a retry on invalid input.
 *   **🖥️ Dynamic Board Display:** The console board refreshes after every valid move, clearly showing the current game state.
-*   **💡 Pure C Implementation:** Lightweight, efficient, and all logic is neatly contained within a single `tictactoe.c` source file.
+*   💡 Modular C Implementation:** Well-structured with logic separated into `main.c` (core game loop and program entry), `tictactoe.c` (game functions like board display, move handling, and win/draw logic), and `tictactoe.h` (function declarations and shared definitions), promoting better organization and maintainability.
 *   **🧑‍💻 Player vs. Player:** Designed for two human players sharing the same terminal.
 
 ---
@@ -89,8 +89,8 @@ Type your answer Player X :
 
 This project is built purely with fundamental, yet powerful tools:
 
-*   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Language" width="20" height="20"/> **C Programming Language:** The core logic and engine of the game.
-*   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gcc/gcc-original.svg" alt="GCC" width="20" height="20"/> **GCC (GNU Compiler Collection):** (Or your preferred C compiler like Clang) Used for compiling the `tictactoe.c` source file.
+*   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Language" width="20" height="20"/> **C Programming Language:** The core logic and engine of the game, structured into `main.c`, `tictactoe.c`, and `tictactoe.h`.
+*   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gcc/gcc-original.svg" alt="GCC" width="20" height="20"/> **GCC (GNU Compiler Collection):** (Or your preferred C compiler like Clang) Used for compiling the `main.c` and `tictactoe.c` source files and linking them.
 *   **Standard C Libraries:** `stdio.h` for input/output operations.
 
 ---
@@ -102,7 +102,7 @@ Ready to play? Follow these simple steps to get the game running on your local m
 ### Prerequisites
 
 *   A C compiler (e.g., GCC, Clang) installed on your system.
-*   Git (for cloning the repository, or you can download the `tictactoe.c` file directly).
+*   Git (for cloning the repository, or you can download the `main.c`, `tictactoe.c`, and `tictactoe.h` files directly).
 *   A terminal or command-line interface.
 
 ### Installation & Compilation
@@ -112,14 +112,14 @@ Ready to play? Follow these simple steps to get the game running on your local m
     git clone https://github.com/Rush1patel/TicTacToe-C.git
     cd TicTacToe-C
     ```
-    Alternatively, you can just download the `tictactoe.c` file.
+    Alternatively, you can download the `main.c`, `tictactoe.c`, and `tictactoe.h` files into the same directory.
 
 2.  **Compile the Game:**
-    Navigate to the directory containing `tictactoe.c` and compile it using GCC (or your preferred C compiler):
-    ```bash
-    gcc tictactoe.c -o tictactoe -Wall -Wextra -pedantic -std=c99
+    Navigate to the directory containing `main.c`, `tictactoe.c`, and `tictactoe.h`. Compile the source files using GCC (or your preferred C compiler):
+    gcc main.c tictactoe.c -o tictactoe -Wall -Wextra -pedantic -std=c99
     ```
-    *   `tictactoe.c`: Your C source file.
+    *   `main.c tictactoe.c`: Your C source files. `main.c` typically contains the `main()` function and program flow, while `tictactoe.c` contains the game logic functions.
+*   `tictactoe.h`: The header file providing function declarations and shared definitions, included by your `.c` files.
     *   `-o tictactoe`: Specifies the output executable name as `tictactoe`.
     *   `-Wall -Wextra -pedantic`: Enables most compiler warnings for better code quality (recommended).
     *   `-std=c99`: Specifies the C99 standard.
@@ -164,7 +164,7 @@ The rules are simple, the challenge is eternal!
 
 ## ✨ Peek into the Code: The `win()` Function
 
-Here's a glimpse of the core logic that determines a victor in `tictactoe.c`.
+Here's a glimpse of the core logic (typically found in `tictactoe.c`) that determines a victor.
 
 ![image alt](https://github.com/Rush1patel/TicTacToe-C/blob/9e407ccf12f88a581b1bbe9ac3e7338498158067/carbon.png)
 
