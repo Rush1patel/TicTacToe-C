@@ -11,37 +11,57 @@ int main()
     int gameover = 0;  // Flag to track game status
     int movecount = 0; // Track moves for draw detection
 
-    // Main game loop: runs until a win or draw
     while (gameover == 0)
     {
-        printf("Type your answer Player %c : ", Player);
         int input;
-        scanf("%d", &input);
+        int validInput = 0;
 
-        // Validate input: must be 1-9 and position must be free
-        if (input >= 1 && input <= 9 && game[input] != 'X' && game[input] != 'O')
+        // Loop until valid input is provided
+        while (!validInput)
         {
-            game[input] = Player; // Place player's symbol
-            movecount++;
-            intro(game);
+            printf("Type your answer Player %c : ", Player);
 
-            // Check for a win
-            if (win(game, &gameover) == 1)
+            // Check if input is a number
+            if (scanf("%d", &input) == 1)
             {
-                printf("Player %c wins!\n", Player);
+                // Validate input: must be 1-9 and position must be free
+                if (input >= 1 && input <= 9 && game[input] != 'X' && game[input] != 'O')
+                {
+                    validInput = 1;
+                    game[input] = Player; // Place player's symbol
+                    movecount++;
+                    intro(game);
+
+                    // Check for a win
+                    if (win(game, &gameover) == 1)
+                    {
+                        printf("Player %c wins!\n", Player);
+                    }
+                    // Check for a draw after 9 moves
+                    else if (movecount == 9)
+                    {
+                        gameover = 1;
+                        printf("It's a draw!\n");
+                    }
+
+                    Player = (Player == 'X') ? 'O' : 'X'; // Switch players
+                }
+                else
+                {
+                    printf("Invalid input. Position already occupied or out of range. Try Again\n");
+                }
             }
-            // Check for a draw after 9 moves
-            else if (movecount == 9)
+            else
             {
-                gameover = 1;
-                printf("It's a draw!\n");
+                printf("Invalid input. Please enter a number.\n");
+
+                // Clear the input buffer
+                int c;
+                while ((c = getchar()) != '\n' && c != EOF)
+                    ;
             }
-            Player = (Player == 'X') ? 'O' : 'X'; // Switch players
-        }
-        else
-        {
-            printf("Input error, Try Again\n");
         }
     }
+
     return 0;
 }
