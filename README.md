@@ -164,7 +164,7 @@ The rules are simple, the challenge is eternal!
 
 ## ✨ Peek into the Code: The `win()` Function
 
-Here's a glimpse of the core logic (typically found in `tictactoe.c`) that determines a victor.
+Here's a glimpse of the core logic (typically found in `tictactoe.c`) that determines a victory.
 
 ![image alt](https://github.com/Rush1patel/TicTacToe-C/blob/9e407ccf12f88a581b1bbe9ac3e7338498158067/carbon.png)
 
